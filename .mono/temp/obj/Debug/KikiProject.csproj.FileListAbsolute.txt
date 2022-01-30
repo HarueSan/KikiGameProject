@@ -1,0 +1,8 @@
+E:\GameProject\KikiProject\.mono\temp\bin\Debug\KikiProject.dll
+E:\GameProject\KikiProject\.mono\temp\bin\Debug\KikiProject.pdb
+E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.csproj.AssemblyReference.cache
+E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.AssemblyInfoInputs.cache
+E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.AssemblyInfo.cs
+E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.csproj.CoreCompileInputs.cache
+E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.dll
+E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.pdb

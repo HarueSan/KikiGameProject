@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://src/units/HorizontalUnit.cs" type="Script" id=1]
+[ext_resource path="res://scenes/units/sprites/Vertical01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/units/horizontal/Horizontal01.png" type="Texture" id=3]
+[ext_resource path="res://src/units/SubUnit.cs" type="Script" id=4]
+[ext_resource path="res://scenes/units/sprites/Horizontal01.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/units/sprites/Horizontal02.tscn" type="PackedScene" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64, 60.5 )
+
+[node name="HorizontalUnit" type="Node2D"]
+position = Vector2( -64, 0 )
+script = ExtResource( 1 )
+_spritesScenes = [ ExtResource( 5 ), ExtResource( 7 ) ]
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64, 7.62939e-06 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+region_enabled = false
+region_rect = Rect2( -90, -100, 1210, 520 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 128, 0 )
+shape = SubResource( 1 )
+script = ExtResource( 4 )
+
+[connection signal="input_event" from="Area2D" to="." method="OnInputEvent"]

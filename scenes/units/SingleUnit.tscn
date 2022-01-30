@@ -1,0 +1,29 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://src/units/SingleUnit.cs" type="Script" id=1]
+[ext_resource path="res://scenes/units/sprites/Single03.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/units/SubUnit.cs" type="Script" id=4]
+[ext_resource path="res://scenes/units/sprites/Single04.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/units/sprites/Single05.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/units/sprites/Single01.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/units/sprites/Single11.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/units/sprites/Single12.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/units/sprites/Single08.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/units/sprites/Single09.tscn" type="PackedScene" id=16]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 50, 50 )
+
+[node name="SingleUnit" type="Node2D"]
+script = ExtResource( 1 )
+_spritesScenes = [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 14 ) ]
+
+[node name="Sprite" parent="." instance=ExtResource( 9 )]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+script = ExtResource( 4 )
+
+[connection signal="input_event" from="Area2D" to="." method="OnInputEvent"]

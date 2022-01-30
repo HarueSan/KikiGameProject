@@ -1,0 +1,2 @@
+﻿51687
+C:/Users/haruesan/scoop/apps/godot-mono/current/godot.exe

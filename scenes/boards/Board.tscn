@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/boards/Board.cs" type="Script" id=1]
+
+[node name="Board" type="Node2D"]
+script = ExtResource( 1 )
+Rows = 6
+Columns = 6
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="Units" type="Node2D" parent="."]
+
+[node name="Goals" type="Node2D" parent="."]

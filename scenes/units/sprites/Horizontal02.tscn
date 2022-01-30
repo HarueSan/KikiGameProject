@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/units/horizontal/two.png" type="Texture" id=1]
+
+[node name="Sprite" type="Sprite"]
+position = Vector2( 52, -7.99999 )
+scale = Vector2( 0.615385, 0.320917 )
+texture = ExtResource( 1 )
+flip_h = true
+region_enabled = true
+region_rect = Rect2( -8.09851, -6.87979, 377.732, 349.672 )

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/units/single/one4.png" type="Texture" id=1]
+
+[node name="Single03" type="Sprite"]
+position = Vector2( 0.824933, 0.583336 )
+scale = Vector2( 0.345149, 0.34882 )
+texture = ExtResource( 1 )

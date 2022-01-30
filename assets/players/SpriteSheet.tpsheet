@@ -1,0 +1,1038 @@
+{
+	"textures": [
+		{
+			"image": "SpriteSheet.png",
+			"size": {
+				"w": 1890,
+				"h": 1824
+			},
+			"sprites": [
+				{
+					"filename": "back/kiki-idle-back-1.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-idle-back-2.png",
+					"region": {
+						"x": 211,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-idle-back-3.png",
+					"region": {
+						"x": 421,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-idle-back-4.png",
+					"region": {
+						"x": 631,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-1.png",
+					"region": {
+						"x": 841,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-2.png",
+					"region": {
+						"x": 1051,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-3.png",
+					"region": {
+						"x": 1261,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-4.png",
+					"region": {
+						"x": 1471,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-5.png",
+					"region": {
+						"x": 1681,
+						"y": 1,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-6.png",
+					"region": {
+						"x": 1,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-7.png",
+					"region": {
+						"x": 211,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-8.png",
+					"region": {
+						"x": 421,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-jump-back-9.png",
+					"region": {
+						"x": 631,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-ride-back-1.png",
+					"region": {
+						"x": 841,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-ride-back-2.png",
+					"region": {
+						"x": 1051,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-ride-back-3.png",
+					"region": {
+						"x": 1261,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "back/kiki-ride-back-4.png",
+					"region": {
+						"x": 1471,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-idle-front-1.png",
+					"region": {
+						"x": 1681,
+						"y": 229,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-idle-front-2.png",
+					"region": {
+						"x": 1,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-idle-front-3.png",
+					"region": {
+						"x": 211,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-idle-front-4.png",
+					"region": {
+						"x": 421,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-1.png",
+					"region": {
+						"x": 631,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-2.png",
+					"region": {
+						"x": 841,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-3.png",
+					"region": {
+						"x": 1051,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-4.png",
+					"region": {
+						"x": 1261,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-5.png",
+					"region": {
+						"x": 1471,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-6.png",
+					"region": {
+						"x": 1681,
+						"y": 457,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-7.png",
+					"region": {
+						"x": 1,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-8.png",
+					"region": {
+						"x": 211,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-jump-front-9.png",
+					"region": {
+						"x": 421,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-ride-front-1.png",
+					"region": {
+						"x": 631,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-ride-front-2.png",
+					"region": {
+						"x": 841,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-ride-front-3.png",
+					"region": {
+						"x": 1051,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "front/kiki-ride-front-4.png",
+					"region": {
+						"x": 1261,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-idle-left-1.png",
+					"region": {
+						"x": 1471,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-idle-left-2.png",
+					"region": {
+						"x": 1681,
+						"y": 685,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-idle-left-3.png",
+					"region": {
+						"x": 1,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-idle-left-4.png",
+					"region": {
+						"x": 211,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-1.png",
+					"region": {
+						"x": 421,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-2.png",
+					"region": {
+						"x": 631,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-3.png",
+					"region": {
+						"x": 841,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-4.png",
+					"region": {
+						"x": 1051,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-5.png",
+					"region": {
+						"x": 1261,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-6.png",
+					"region": {
+						"x": 1471,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-7.png",
+					"region": {
+						"x": 1681,
+						"y": 913,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-8.png",
+					"region": {
+						"x": 1,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-jump-left-9.png",
+					"region": {
+						"x": 211,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-ride-left-1.png",
+					"region": {
+						"x": 421,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-ride-left-2.png",
+					"region": {
+						"x": 631,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-ride-left-3.png",
+					"region": {
+						"x": 841,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "left/kiki-ride-left-4.png",
+					"region": {
+						"x": 1051,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-idle-right-1.png",
+					"region": {
+						"x": 1261,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-idle-right-2.png",
+					"region": {
+						"x": 1471,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-idle-right-3.png",
+					"region": {
+						"x": 1681,
+						"y": 1141,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-idle-right-4.png",
+					"region": {
+						"x": 1,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-1.png",
+					"region": {
+						"x": 211,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-2.png",
+					"region": {
+						"x": 421,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-3.png",
+					"region": {
+						"x": 631,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-4.png",
+					"region": {
+						"x": 841,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-5.png",
+					"region": {
+						"x": 1051,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-6.png",
+					"region": {
+						"x": 1261,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-7.png",
+					"region": {
+						"x": 1471,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-8.png",
+					"region": {
+						"x": 1681,
+						"y": 1369,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-jump-right-9.png",
+					"region": {
+						"x": 1,
+						"y": 1597,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-ride-right-1.png",
+					"region": {
+						"x": 211,
+						"y": 1597,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-ride-right-2.png",
+					"region": {
+						"x": 421,
+						"y": 1597,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-ride-right-3.png",
+					"region": {
+						"x": 631,
+						"y": 1597,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "right/kiki-ride-right-4.png",
+					"region": {
+						"x": 841,
+						"y": 1597,
+						"w": 208,
+						"h": 226
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:ef1ef13b77752711ea900c0230523856:d57367f09433ba8295b836c8581da5f4:feb383e149cf7312e812049eacbf64f9$"
+	}
+}
