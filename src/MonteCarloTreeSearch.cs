@@ -251,7 +251,7 @@ namespace DefaultNamespace
 
                 if (nextColumn != -1)
                 {
-                    Console.WriteLine($"R {playerRow} {nextColumn}");
+                    // Console.WriteLine($"R {playerRow} {nextColumn}");
                     actions.Add($"R {playerRow} {nextColumn}");
                 }
             }
