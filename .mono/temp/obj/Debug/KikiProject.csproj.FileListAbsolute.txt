@@ -6,3 +6,12 @@ E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.AssemblyInfo.cs
 E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.csproj.CoreCompileInputs.cache
 E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.dll
 E:\GameProject\KikiProject\.mono\temp\obj\Debug\KikiProject.pdb
+C:\Users\harue\KikiGameProject\.mono\temp\bin\Debug\KikiProject.dll
+C:\Users\harue\KikiGameProject\.mono\temp\bin\Debug\KikiProject.pdb
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.csproj.AssemblyReference.cache
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.AssemblyInfoInputs.cache
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.AssemblyInfo.cs
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.csproj.CoreCompileInputs.cache
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.dll
+C:\Users\harue\KikiGameProject\.mono\temp\obj\Debug\KikiProject.pdb

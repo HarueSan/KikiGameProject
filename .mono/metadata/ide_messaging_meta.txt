@@ -1,2 +1,2 @@
-﻿58744
-C:/Users/haruesan/scoop/apps/godot-mono/current/godot.exe
+﻿62752
+C:/ProgramData/scoop/apps/godot-mono/current/godot-mono.exe

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GameProject\\KikiProject\\KikiProject.csproj": {}
+    "C:\\Users\\harue\\KikiGameProject\\KikiProject.csproj": {}
   },
   "projects": {
-    "E:\\GameProject\\KikiProject\\KikiProject.csproj": {
+    "C:\\Users\\harue\\KikiGameProject\\KikiProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GameProject\\KikiProject\\KikiProject.csproj",
+        "projectUniqueName": "C:\\Users\\harue\\KikiGameProject\\KikiProject.csproj",
         "projectName": "KikiProject",
-        "projectPath": "E:\\GameProject\\KikiProject\\KikiProject.csproj",
-        "packagesPath": "C:\\Users\\haruesan\\.nuget\\packages\\",
-        "outputPath": "E:\\GameProject\\KikiProject\\.mono\\temp\\obj\\",
+        "projectPath": "C:\\Users\\harue\\KikiGameProject\\KikiProject.csproj",
+        "packagesPath": "C:\\Users\\harue\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harue\\KikiGameProject\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
-          "C:\\Users\\haruesan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\harue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
@@ -43,7 +45,7 @@
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\ProgramData\\scoop\\apps\\dotnet-sdk\\current\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

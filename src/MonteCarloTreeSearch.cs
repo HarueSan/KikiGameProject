@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using Godot;
+using System.Linq;
+using System.Runtime.CompilerServices;
+
 
 namespace DefaultNamespace
 {
     // generate action -> return action list
-    // TODO: generate state
 
     /*
      * action
@@ -22,21 +23,57 @@ namespace DefaultNamespace
     {
         // assume initial state
 
+        static List<State> states = new List<State>();
+
+
+        public static void Run()
+        {
+            State s = states[0];
+
+            s.generateActions();
+
+            foreach (string action in s.Actions)
+            {
+                State nextState = new State(s, action);
+                if (s.addChild(nextState, states, action))
+                {
+                    states.Add(nextState);
+                }
+            }
+            
+        }
+
+        public static void PrintTree(State root, int level)
+        {
+            for (int i = 0; i < level; i++)
+            {
+                Console.Write("-");
+            }
+
+            Console.Write("[" + root.createdAction + "] " );
+            root.printBoard();
+
+            foreach (var child in root.Children)
+            {
+                PrintTree(child, level + 1);
+            }
+        }
+
+
         public static void Main()
         {
-            Console.WriteLine("Hello World");
-            List<string> units = new List<string>() {"1", "1", "2"};
-            int row = 4;
-            int column = 4;
+            Console.WriteLine("unitPosition row column");
+            List<string> units = new List<string>() {"1", "2", "3"};
+            int row = 1;
+            int column = 5;
 
+            State rootState = new State(units, row, column, 0, 4, 0, 0);
+            rootState.dropUnit("1", 0, 1);
 
-            State state = new State(units, row, column, 2, 2, 0, 1);
-            state.dropUnit("1", 1, 1);
-            // state.dropUnit("1", 0, 0);
-            state.dropUnit("1", 0, 2);
-            state.generateActions();
+            states.Add(rootState);
 
-            state.printActions();
+            Run();
+            PrintTree(rootState,0);
         }
     }
 
@@ -49,6 +86,17 @@ namespace DefaultNamespace
         private int playerColumn = -1;
         private int playerRow = -1;
         private List<string> units;
+
+        public string createdAction = null;
+
+
+        public List<string> Actions
+        {
+            get { return actions; }
+        }
+
+        public List<State> Children => childrenStates;
+
 
         public State(int row, int column)
         {
@@ -87,8 +135,54 @@ namespace DefaultNamespace
             this.childrenStates = new List<State>();
             this.board = (string[,]) parent.board.Clone();
             this.units = new List<string>(parent.units);
+            this.playerRow = parent.playerRow;
+            this.playerColumn = parent.playerColumn;
+            this.actions = new List<string>();
 
-            //TODO: implement new state
+            var actions = action.Split(' ');
+            var nextRow = Convert.ToInt32(actions[1]);
+            var nextCol = Convert.ToInt32(actions[2]);
+            this.createdAction = action;
+            switch (actions[0])
+            {
+                case "U":
+                case "L":
+                case "R":
+                case "D":
+
+                    // Console.WriteLine("TEST " + this.board[nextRow, nextCol]);
+
+                    this.board[playerRow, playerColumn] = null;
+                    playerRow = nextRow;
+                    playerColumn = nextCol;
+                    this.board[playerRow, playerColumn] = this.board[playerRow, playerColumn] != "G" ? "P" : "W";
+                    break;
+                default:
+                    var isNumeric = int.TryParse(actions[0], out var unitIndex);
+
+                    if (isNumeric)
+                    {
+                        var currentUnit = units[unitIndex];
+                        switch (currentUnit)
+                        {
+                            case "1":
+                                this.board[nextRow, nextCol] = currentUnit;
+                                break;
+                            case "2":
+                                this.board[nextRow, nextCol] = currentUnit;
+                                this.board[nextRow, nextCol + 1] = currentUnit;
+                                break;
+                            case "3":
+                                this.board[nextRow, nextCol] = currentUnit;
+                                this.board[nextRow + 1, nextCol] = currentUnit;
+                                break;
+                        }
+
+                        units.RemoveAt(unitIndex);
+                    }
+
+                    break;
+            }
         }
 
         public void dropUnit(string unit, int row, int column)
@@ -114,7 +208,6 @@ namespace DefaultNamespace
                     board[row, column] = unit;
                     board[row + 1, column] = unit;
                 }
-
             }
         }
 
@@ -123,6 +216,7 @@ namespace DefaultNamespace
             var rows = board.GetLength(0);
             var columns = board.GetLength(1);
 
+            // "1": one unit
             if (unit == "1")
             {
                 return board[row, column] == null;
@@ -152,33 +246,35 @@ namespace DefaultNamespace
                 switch (units[k])
                 {
                     case "1":
-                        if(checkUsedUnit[1]) continue;
-                        checkUsedUnit[1] = true; break;
+                        if (checkUsedUnit[1]) continue;
+                        checkUsedUnit[1] = true;
+                        break;
                     case "2":
-                        if(checkUsedUnit[2]) continue;
-                        checkUsedUnit[2] = true; break;
+                        if (checkUsedUnit[2]) continue;
+                        checkUsedUnit[2] = true;
+                        break;
                     case "3":
-                        if(checkUsedUnit[3]) continue;
-                        checkUsedUnit[3] = true; break;
+                        if (checkUsedUnit[3]) continue;
+                        checkUsedUnit[3] = true;
+                        break;
                 }
+
                 for (int i = 0; i < rows; i++)
                 {
                     for (int j = 0; j < columns; j++)
                     {
-                        // Console.WriteLine(board[i,j] == null);
                         if (board[i, j] == null)
                         {
                             //check unit type and then generate action to action list
                             if (canDrop(units[k], i, j))
                             {
-                                //Console.WriteLine($"{k} {i} {j}");
                                 actions.Add($"{k} {i} {j}");
                             }
                         }
                     }
                 }
             }
-            
+
             // move up
             if (playerRow - 1 < 0 || board[playerRow - 1, playerColumn] == null) ;
             else
@@ -186,9 +282,10 @@ namespace DefaultNamespace
                 int nextRow = -1;
                 for (int i = playerRow - 1; i >= 0; i--)
                 {
-                    if (board[i, playerColumn] == null)
+                    if (board[i, playerColumn] == null || board[i, playerColumn] == "G")
                     {
                         nextRow = i;
+                        break;
                     }
                 }
 
@@ -206,9 +303,10 @@ namespace DefaultNamespace
                 int nextRow = -1;
                 for (int i = playerRow + 1; i < rows; i++)
                 {
-                    if (board[i, playerColumn] == null)
+                    if (board[i, playerColumn] == null || board[i, playerColumn] == "G")
                     {
                         nextRow = i;
+                        break;
                     }
                 }
 
@@ -221,13 +319,15 @@ namespace DefaultNamespace
 
             // move left
             if (playerColumn - 1 < 0 || board[playerRow, playerColumn - 1] == null) ;
+            else
             {
                 int nextColumn = -1;
                 for (int i = playerColumn - 1; i >= 0; i--)
                 {
-                    if (board[playerRow, i] == null)
+                    if (board[playerRow, i] == null || board[playerRow, i] == "G")
                     {
                         nextColumn = i;
+                        break;
                     }
                 }
 
@@ -237,15 +337,19 @@ namespace DefaultNamespace
                     actions.Add($"L {playerRow} {nextColumn}");
                 }
             }
+
             // move right
+
             if (playerColumn + 1 >= columns || board[playerRow, playerColumn + 1] == null) ;
+            else
             {
                 int nextColumn = -1;
                 for (int i = playerColumn + 1; i < columns; i++)
                 {
-                    if (board[playerRow, i] == null)
+                    if (board[playerRow, i] == null || board[playerRow, i] == "G")
                     {
                         nextColumn = i;
+                        break;
                     }
                 }
 
@@ -262,6 +366,75 @@ namespace DefaultNamespace
             foreach (var action in actions)
             {
                 Console.WriteLine(action);
+            }
+        }
+
+
+        protected bool Equals(State other)
+        {
+            return this.board.Equals(other.board);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((State) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public bool addChild(State newState, List<State> states, string action)
+        {
+            var actions = action.Split(' ');
+            if (!"UDLR".Contains(actions[0]))
+            {
+                childrenStates.Add(newState);
+                return true;
+            }
+
+            bool foundDuplicate = false;
+            //check duplicate state from states
+            foreach (var state in states)
+            {
+                if (this.Equals(state))
+                {
+                    foundDuplicate = true;
+                    break;
+                }
+            }
+
+            if (foundDuplicate == false)
+            {
+                this.childrenStates.Add(newState);
+                return true;
+            }
+
+            return false;
+        }
+
+        public void printBoard()
+        {
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (board[i, j] == null)
+                    {
+                        Console.Write("_" + " ");
+                    }
+                    else
+                    {
+                        Console.Write(board[i, j] + " ");
+                    }
+                }
+
+                Console.WriteLine();
             }
         }
     }
