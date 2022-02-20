@@ -24,8 +24,13 @@ namespace KikiProject.ui
 
         public override void _Ready()
         {
+            
+        }
+
+        public void GenerateUnit(int size)
+        {
             Init();
-            RandomUnits();
+            RandomUnits(size);
             InitUnits();
         }
 
@@ -47,9 +52,9 @@ namespace KikiProject.ui
             }
         }
 
-        void RandomUnits()
+        void RandomUnits(int size)
         {
-            int ranNumber = random.Next(1, 20);
+            int ranNumber = random.Next(1, size);
             _unitScenes = new PackedScene[ranNumber];
             for (int i = 0; i < ranNumber; i++)
             {

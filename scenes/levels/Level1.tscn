@@ -24,7 +24,6 @@ texture = ExtResource( 9 )
 
 [node name="Board" parent="." instance=ExtResource( 3 )]
 position = Vector2( 625, 145 )
-scale = Vector2( 1, 1 )
 Rows = 4
 Columns = 4
 _unitPanelPath = NodePath("../Panel")

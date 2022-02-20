@@ -13,10 +13,10 @@ namespace KikiProject.boards
 {
     public class DynamicBoard : Board
     {
-        [Export] public readonly int Rows = 0;
-        [Export] public readonly int Columns = 0;
+        [Export] public int Rows = 0;
+        [Export] public int Columns = 0;
         public Vector2 GoalPosition;
-        private Vector2 PlayerStartPosition;
+        public Vector2 PlayerStartPosition;
 
         public Tile[,] LayerTile;
 
@@ -29,7 +29,7 @@ namespace KikiProject.boards
         private Node2D _playersNode;
         private Node2D _goalsNode;
         private Node2D _unitsNode;
-        private UnitPanel _unitPanel;
+        public UnitPanel _unitPanel;
         [Export]private NodePath _unitPanelPath;
 
         private Random random = new Random();
@@ -41,6 +41,28 @@ namespace KikiProject.boards
 
         public override void _Ready()
         {
+            
+            Random random = new Random();
+            Rows = random.Next(1, 5);
+            Columns = random.Next(3, 7);
+
+            GoalPosition.y = random.Next(1, Rows);
+            GoalPosition.x = random.Next(1, Columns);
+            
+            PlayerStartPosition.y = random.Next(1, Rows);
+            PlayerStartPosition.x = random.Next(1, Columns);
+
+            while (PlayerStartPosition == GoalPosition)
+            {
+                PlayerStartPosition.y = random.Next(1, Rows);
+                PlayerStartPosition.x = random.Next(1, Columns);
+            }
+            
+            
+            GD.Print(Rows,Columns,GoalPosition,PlayerStartPosition);
+
+            
+            
             playerScene = ResourceLoader.Load<PackedScene>("res://scenes/players/Player.tscn");
 
             LayerTile = new Tile[Rows, Columns];

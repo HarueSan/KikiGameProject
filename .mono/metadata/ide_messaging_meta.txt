@@ -1,2 +1,2 @@
-﻿62752
+﻿56001
 C:/ProgramData/scoop/apps/godot-mono/current/godot-mono.exe

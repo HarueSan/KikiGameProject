@@ -40,6 +40,8 @@ namespace KikiProject.boards
 
         public override void _Ready()
         {
+       
+            
             tileScene = ResourceLoader.Load<PackedScene>("res://scenes/tiles/Tile.tscn");
             playerScene = ResourceLoader.Load<PackedScene>("res://scenes/players/Player.tscn");
             goalScene = ResourceLoader.Load<PackedScene>("res://scenes/goals/Goal.tscn");
